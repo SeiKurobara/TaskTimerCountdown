@@ -1,0 +1,11 @@
+C:\Users\user\Desktop\Github-Repos\TaskTimerCountdown\TaskTimerCountdown\TaskTimerCountDown\bin\Debug\TaskTimerCountDown.exe.config
+C:\Users\user\Desktop\Github-Repos\TaskTimerCountdown\TaskTimerCountdown\TaskTimerCountDown\bin\Debug\TaskTimerCountDown.exe
+C:\Users\user\Desktop\Github-Repos\TaskTimerCountdown\TaskTimerCountdown\TaskTimerCountDown\bin\Debug\TaskTimerCountDown.pdb
+C:\Users\user\Desktop\Github-Repos\TaskTimerCountdown\TaskTimerCountdown\TaskTimerCountDown\obj\Debug\TaskTimerCountDown.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Github-Repos\TaskTimerCountdown\TaskTimerCountdown\TaskTimerCountDown\obj\Debug\TaskTimerCountDown.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\Github-Repos\TaskTimerCountdown\TaskTimerCountdown\TaskTimerCountDown\obj\Debug\TaskTimerCountDown.Form1.resources
+C:\Users\user\Desktop\Github-Repos\TaskTimerCountdown\TaskTimerCountdown\TaskTimerCountDown\obj\Debug\TaskTimerCountDown.Properties.Resources.resources
+C:\Users\user\Desktop\Github-Repos\TaskTimerCountdown\TaskTimerCountdown\TaskTimerCountDown\obj\Debug\TaskTimerCountDown.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Github-Repos\TaskTimerCountdown\TaskTimerCountdown\TaskTimerCountDown\obj\Debug\TaskTimerCountDown.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Github-Repos\TaskTimerCountdown\TaskTimerCountdown\TaskTimerCountDown\obj\Debug\TaskTimerCountDown.exe
+C:\Users\user\Desktop\Github-Repos\TaskTimerCountdown\TaskTimerCountdown\TaskTimerCountDown\obj\Debug\TaskTimerCountDown.pdb
