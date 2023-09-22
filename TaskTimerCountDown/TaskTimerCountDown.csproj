@@ -58,6 +58,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Timer.cs" />
+    <Compile Include="TimerController.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

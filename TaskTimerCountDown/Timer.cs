@@ -9,25 +9,42 @@ namespace TaskTimerCountDown
 {
     class Timer
     {
-        public int secs = 60;
-        public bool CountDownTimer(int hours, int minutes) {
+        public int Hours { get; set; }
+        public int Minutes { get; set; }
+        public int Seconds { get; set; }
 
-            
-            for (; hours >= 0; hours--)
-            {
-                for (; minutes >= 0; minutes--)
-                {
-                    for (; secs >= 1; secs--)
-                    {
-                        Thread.Sleep(1000); // hold execution for 4 seconds
-                    }
-                    secs = 60;
-                }
-                minutes = 59;
-                //continue this using timer methods 
-            }
-            return true;
 
+        public Timer(int Hours, int Minutes, int Seconds)
+        {
+            this.Hours = Hours;
+            this.Minutes = Minutes;
+            this.Seconds = Seconds;
+
+        }
+
+        
+    }
+    public class TimerCountDown
+    {
+        public int ConvertToSeconds(int Hours, int Minutes)
+        {
+            int totalSeconds = (Hours * 60 * 60) + (Minutes * 60);
+            return totalSeconds;
+        }
+        public string ConvertToSecondsString(int Hours, int Minutes)
+        {
+            int totalSeconds = (Hours * 60 * 60) + (Minutes * 60);
+            return totalSeconds.ToString();
+        }
+
+        public string ConvertToHoursAndMinutes(int secs)
+        {
+            TimeSpan time = TimeSpan.FromSeconds(secs);
+            int hours = time.Hours;
+            int minutes = time.Minutes;
+            int seconds = time.Seconds;
+            string kangkng = $"{hours}:{minutes}:{seconds}";
+            return kangkng;
         }
     }
 }

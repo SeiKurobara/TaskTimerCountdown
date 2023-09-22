@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.l_TimerTime = new System.Windows.Forms.Label();
             this.cb_Timer1 = new System.Windows.Forms.CheckBox();
-            this.l_Timer1 = new System.Windows.Forms.Label();
+            this.l_TimerName = new System.Windows.Forms.Label();
             this.tb_Hours = new System.Windows.Forms.TextBox();
             this.l_Hours = new System.Windows.Forms.Label();
             this.l_Minutes = new System.Windows.Forms.Label();
@@ -39,6 +41,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.l_For = new System.Windows.Forms.Label();
             this.tb_For = new System.Windows.Forms.TextBox();
+            this.countdownTimer = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,36 +57,46 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.l_TimerTime);
             this.groupBox1.Controls.Add(this.cb_Timer1);
-            this.groupBox1.Controls.Add(this.l_Timer1);
+            this.groupBox1.Controls.Add(this.l_TimerName);
             this.groupBox1.Location = new System.Drawing.Point(370, 109);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(401, 228);
+            this.groupBox1.Size = new System.Drawing.Size(174, 136);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Timers";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // l_TimerTime
+            // 
+            this.l_TimerTime.AutoSize = true;
+            this.l_TimerTime.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F);
+            this.l_TimerTime.Location = new System.Drawing.Point(10, 59);
+            this.l_TimerTime.Name = "l_TimerTime";
+            this.l_TimerTime.Size = new System.Drawing.Size(88, 22);
+            this.l_TimerTime.TabIndex = 12;
+            this.l_TimerTime.Text = "00:00:00";
+            // 
             // cb_Timer1
             // 
             this.cb_Timer1.AutoSize = true;
             this.cb_Timer1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
-            this.cb_Timer1.Location = new System.Drawing.Point(11, 66);
+            this.cb_Timer1.Location = new System.Drawing.Point(14, 43);
             this.cb_Timer1.Name = "cb_Timer1";
-            this.cb_Timer1.Size = new System.Drawing.Size(110, 22);
-            this.cb_Timer1.TabIndex = 9;
-            this.cb_Timer1.Text = "cb_Timer1";
+            this.cb_Timer1.Size = new System.Drawing.Size(15, 14);
+            this.cb_Timer1.TabIndex = 11;
             this.cb_Timer1.UseVisualStyleBackColor = true;
             // 
-            // l_Timer1
+            // l_TimerName
             // 
-            this.l_Timer1.AutoSize = true;
-            this.l_Timer1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_Timer1.Location = new System.Drawing.Point(7, 29);
-            this.l_Timer1.Name = "l_Timer1";
-            this.l_Timer1.Size = new System.Drawing.Size(74, 22);
-            this.l_Timer1.TabIndex = 8;
-            this.l_Timer1.Text = "Timer1";
+            this.l_TimerName.AutoSize = true;
+            this.l_TimerName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_TimerName.Location = new System.Drawing.Point(24, 37);
+            this.l_TimerName.Name = "l_TimerName";
+            this.l_TimerName.Size = new System.Drawing.Size(74, 22);
+            this.l_TimerName.TabIndex = 8;
+            this.l_TimerName.Text = "Timer1";
             // 
             // tb_Hours
             // 
@@ -144,11 +157,16 @@
             this.tb_For.Size = new System.Drawing.Size(100, 20);
             this.tb_For.TabIndex = 7;
             // 
+            // countdownTimer
+            // 
+            this.countdownTimer.Interval = 1000;
+            this.countdownTimer.Tick += new System.EventHandler(this.countdownTimer_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(769, 337);
             this.Controls.Add(this.l_For);
             this.Controls.Add(this.tb_For);
             this.Controls.Add(this.button1);
@@ -172,8 +190,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox cb_Timer1;
-        private System.Windows.Forms.Label l_Timer1;
+        private System.Windows.Forms.Label l_TimerName;
         private System.Windows.Forms.TextBox tb_Hours;
         private System.Windows.Forms.Label l_Hours;
         private System.Windows.Forms.Label l_Minutes;
@@ -181,6 +198,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label l_For;
         private System.Windows.Forms.TextBox tb_For;
+        private System.Windows.Forms.Label l_TimerTime;
+        private System.Windows.Forms.CheckBox cb_Timer1;
+        private System.Windows.Forms.Timer countdownTimer;
     }
 }
 
